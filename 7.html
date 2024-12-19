@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>現煮咖啡課程 CRM 系統</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .container {
+      margin: 20px auto;
+      max-width: 900px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>現煮咖啡課程 CRM 系統</h1>
+</header>
+
+<nav>
+  <a href="#customers">客戶管理</a>
+  <a href="#courses">課程管理</a>
+  <a href="#reports">財務報表</a>
+</nav>
+
+<div class="container" id="customers">
+  <h2>客戶管理</h2>
+  <button onclick="addCustomer()">新增客戶</button>
+  <table>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>聯絡方式</th>
+        <th>生日</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="customer-list">
+      <tr>
+        <td>張小明</td>
+        <td>example@gmail.com</td>
+        <td>1990-01-01</td>
+        <td><button>編輯</button> <button>刪除</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container" id="courses">
+  <h2>課程管理</h2>
+  <button onclick="addCourse()">新增課程</button>
+  <table>
+    <thead>
+      <tr>
+        <th>課程名稱</th>
+        <th>時間</th>
+        <th>地點</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="course-list">
+      <tr>
+        <td>手沖咖啡基礎班</td>
+        <td>2024-12-20</td>
+        <td>台北市大安區</td>
+        <td><button>編輯</button> <button>刪除</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container" id="reports">
+  <h2>財務報表</h2>
+  <p>本月營收：$30,000</p>
+  <p>本月報名人數：120人</p>
+</div>
+
+<script>
+  function addCustomer() {
+    alert("新增客戶功能開發中！");
+  }
+
+  function addCourse() {
+    alert("新增課程功能開發中！");
+  }
+</script>
+
+</body>
+</html>
